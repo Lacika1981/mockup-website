@@ -1,0 +1,55 @@
+body {
+    font-family: Raleway, sans-serif;
+}
+
+.header {
+    position: relative;
+    height: 70vh;
+}
+
+.about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about h2 {
+    font-size: 5rem;
+}
+
+.cube {
+    position: absolute;
+    bottom: 75px;
+    left: calc(50% - 75px);
+}
+
+.cube-outer {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px dotted black;
+}
+
+.cube-outer p {
+    position: relative;
+    top: calc(50% - 16px);
+    font-size: 1.5rem;
+}
+
+.cube-inner {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    transform: rotateZ(45deg);
+}
+
+
+/* .cube p {
+    font-size: 1.25rem;
+    height: 150px;
+    width: 150px;
+    transform: rotateZ(-45deg);
+    transform-origin: 100% 30%;
+} */
