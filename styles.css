@@ -1,10 +1,25 @@
+/* * {
+    outline: 1px solid red;
+}
+ */
+
 body {
     font-family: Raleway, sans-serif;
+}
+
+.nav a {
+    color: white !important;
+}
+
+.full-height {
+    height: 100vh;
 }
 
 .header {
     position: relative;
     height: 70vh;
+    background-image: url("images/background-header-md.jpg");
+    background-size: cover;
 }
 
 .about {
@@ -45,11 +60,40 @@ body {
     transform: rotateZ(45deg);
 }
 
+.cube2 {
+    bottom: 75px;
+    left: calc(50% - 75px);
+}
 
-/* .cube p {
-    font-size: 1.25rem;
-    height: 150px;
+.cube2-outer {
     width: 150px;
-    transform: rotateZ(-45deg);
-    transform-origin: 100% 30%;
-} */
+    height: 150px;
+    border: 1px dotted black;
+}
+
+.cube2-outer p {
+    position: relative;
+    top: calc(50% - 16px);
+    font-size: 1.5rem;
+}
+
+.cube2-inner {
+    position: relative;
+    bottom: 150px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    transform: rotateZ(45deg);
+}
+
+hr {
+    margin-left: 0;
+    border: none;
+    height: 3px;
+    color: grey;
+    background-color: grey;
+}
+
+.blocks {
+    margin-bottom: 200px;
+}
