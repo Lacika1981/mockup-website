@@ -33,14 +33,19 @@ body {
     font-size: 5rem;
 }
 
+.margin-75 {
+    margin-top: -75px;
+}
+
+.margin-65 {
+    margin-top: -65px;
+}
+
 .cube {
-    position: absolute;
-    bottom: 75px;
-    left: calc(50% - 75px);
+    z-index: 9;
 }
 
 .cube-outer {
-    position: absolute;
     width: 150px;
     height: 150px;
     border: 1px dotted black;
@@ -48,36 +53,11 @@ body {
 
 .cube-outer p {
     position: relative;
-    top: calc(50% - 16px);
+    top: calc(50% - 20px);
     font-size: 1.5rem;
 }
 
 .cube-inner {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    transform: rotateZ(45deg);
-}
-
-.cube2 {
-    bottom: 75px;
-    left: calc(50% - 75px);
-}
-
-.cube2-outer {
-    width: 150px;
-    height: 150px;
-    border: 1px dotted black;
-}
-
-.cube2-outer p {
-    position: relative;
-    top: calc(50% - 16px);
-    font-size: 1.5rem;
-}
-
-.cube2-inner {
     position: relative;
     bottom: 150px;
     width: 150px;
@@ -96,4 +76,19 @@ hr {
 
 .blocks {
     margin-bottom: 200px;
+}
+
+.blocks .card {
+    border: 10px solid rgba(128, 128, 128, 0.548);
+    border-radius: 10px;
+    border-style: inset;
+    max-width: 300px;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+.image-holder {
+    background-color: grey;
+    width: 270px;
+    height: 270px;
 }
