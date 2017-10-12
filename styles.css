@@ -15,11 +15,18 @@ body {
     height: 100vh;
 }
 
-.header {
+.header,
+.testimonial {
     position: relative;
-    height: 70vh;
-    background-image: url("images/background-header-md.jpg");
     background-size: cover;
+}
+
+.header {
+    background-image: url("images/background-header-md.jpg");
+}
+
+.testimonial {
+    background-image: url("images/testimonial-md.jpg")
 }
 
 .about {
@@ -39,6 +46,14 @@ body {
 
 .margin-65 {
     margin-top: -65px;
+}
+
+.mb-200pos {
+    margin-bottom: 200px;
+}
+
+.height-70 {
+    height: 70vh;
 }
 
 .cube {
@@ -74,10 +89,6 @@ hr {
     background-color: grey;
 }
 
-.blocks {
-    margin-bottom: 200px;
-}
-
 .blocks .card {
     border: 10px solid rgba(128, 128, 128, 0.548);
     border-radius: 10px;
@@ -88,7 +99,19 @@ hr {
 }
 
 .image-holder {
-    background-color: grey;
+    background-color: rgba(212, 212, 212, 0.658);
     width: 270px;
     height: 270px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+.bottom-row .image-holder:last-child {
+    width: 570px;
+}
+
+.partners {
+    height: 30vh;
+    background-color: rgba(95, 185, 197, 0.329);
 }
