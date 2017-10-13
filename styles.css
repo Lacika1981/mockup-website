@@ -1,117 +1,232 @@
-/* * {
+    /* * {
     outline: 1px solid red;
 }
  */
-
-body {
-    font-family: Raleway, sans-serif;
-}
-
-.nav a {
-    color: white !important;
-}
-
-.full-height {
-    height: 100vh;
-}
-
-.header,
-.testimonial {
-    position: relative;
-    background-size: cover;
-}
-
-.header {
-    background-image: url("images/background-header-md.jpg");
-}
-
-.testimonial {
-    background-image: url("images/testimonial-md.jpg")
-}
-
-.about {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.about h2 {
-    font-size: 5rem;
-}
-
-.margin-75 {
-    margin-top: -75px;
-}
-
-.margin-65 {
-    margin-top: -65px;
-}
-
-.mb-200pos {
-    margin-bottom: 200px;
-}
-
-.height-70 {
-    height: 70vh;
-}
-
-.cube {
-    z-index: 9;
-}
-
-.cube-outer {
-    width: 150px;
-    height: 150px;
-    border: 1px dotted black;
-}
-
-.cube-outer p {
-    position: relative;
-    top: calc(50% - 20px);
-    font-size: 1.5rem;
-}
-
-.cube-inner {
-    position: relative;
-    bottom: 150px;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    transform: rotateZ(45deg);
-}
-
-hr {
-    margin-left: 0;
-    border: none;
-    height: 3px;
-    color: grey;
-    background-color: grey;
-}
-
-.blocks .card {
-    border: 10px solid rgba(128, 128, 128, 0.548);
-    border-radius: 10px;
-    border-style: inset;
-    max-width: 300px;
-    min-height: 300px;
-    box-sizing: border-box;
-}
-
-.image-holder {
-    background-color: rgba(212, 212, 212, 0.658);
-    width: 270px;
-    height: 270px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 30px;
-}
-
-.bottom-row .image-holder:last-child {
-    width: 570px;
-}
-
-.partners {
-    height: 30vh;
-    background-color: rgba(95, 185, 197, 0.329);
-}
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+        text-transform: uppercase;
+    }
+    
+    .nav a {
+        color: white !important;
+    }
+    
+    #mid-links a {
+        color: black !important;
+    }
+    
+    .full-height {
+        height: 100vh;
+    }
+    
+    .header,
+    .testimonial {
+        position: relative;
+        background-size: cover;
+    }
+    
+    .header {
+        background-image: url("images/background-header-md.jpg");
+    }
+    
+    .testimonial {
+        background-image: url("images/testimonial-md.jpg");
+    }
+    
+    #testimonial {
+        position: relative;
+    }
+    
+    .fa-quote-right {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .fa-quote-right,
+    .fa-quote-left {
+        opacity: 0.5;
+    }
+    
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(115, 183, 219, 0.75);
+        opacity: 0.2;
+        z-index: 1000;
+    }
+    
+    .about {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .about h2 {
+        font-size: 5rem;
+        color: white;
+    }
+    
+    .margin-75 {
+        margin-top: -75px;
+    }
+    
+    .mb-200pos {
+        margin-bottom: 200px;
+    }
+    
+    .mb-50pos {
+        margin-bottom: 50px;
+    }
+    
+    .height-70 {
+        height: 70vh;
+    }
+    
+    .height-15 {
+        min-height: 15vh;
+    }
+    
+    .cube {
+        z-index: 9;
+        height: 150px;
+    }
+    
+    .cube-outer {
+        width: 150px;
+        height: 150px;
+        border: 1px dotted black;
+    }
+    
+    .cube-outer p {
+        position: relative;
+        top: calc(50% - 20px);
+        font-size: 1.5rem;
+    }
+    
+    .cube-top .cube-outer p {
+        background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 52%, rgb(0, 0, 0) 48%, rgb(0, 0, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 52%, rgb(0, 0, 0) 48%, rgb(0, 0, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 52%, rgb(0, 0, 0) 48%, rgb(0, 0, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .cube-inner {
+        position: relative;
+        bottom: 150px;
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        transform: rotateZ(45deg);
+        transition-duration: 500ms;
+    }
+    
+    .cube-inner:hover {
+        transform: rotateZ(-15deg);
+        transition-duration: 500ms;
+    }
+    
+    hr {
+        margin-left: 0;
+        border: none;
+        height: 3px;
+        color: grey;
+        background-color: grey;
+    }
+    
+    .blocks .card {
+        border: 10px solid rgba(128, 128, 128, 0.548);
+        border-radius: 10px;
+        border-style: inset;
+        max-width: 300px;
+        min-height: 300px;
+        box-sizing: border-box;
+    }
+    
+    #blocks img {
+        min-height: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .image-holder {
+        background-color: rgba(212, 212, 212, 0.658);
+        margin-top: 30px;
+    }
+    
+    .bottom-row .image-holder:last-child {
+        width: 560px;
+    }
+    
+    .partners {
+        min-height: 30vh;
+        background-color: rgba(95, 185, 197, 0.329);
+    }
+    
+    #join {
+        background-color: rgb(1, 42, 100);
+    }
+    
+    #join h4,
+    #join p {
+        color: white;
+    }
+    
+    button {
+        background-color: rgb(1, 42, 100);
+        border: 1px solid white;
+    }
+    
+    button p {
+        display: inline;
+        padding-right: 10px;
+        color: white;
+    }
+    
+    .fa-arrow-right {
+        color: white;
+    }
+    
+    .fa-arrow-right::before {
+        border-left: 1px solid white;
+        height: 100%;
+        padding-left: 10px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .cube-bottom {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        button {
+            font-size: 80%;
+        }
+    }
