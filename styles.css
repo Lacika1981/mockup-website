@@ -47,6 +47,16 @@
         position: relative;
     }
     
+    #testimonial img {
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+    }
+    
+    .image-active {
+        opacity: 1 !important;
+    }
+    
     .fa-quote-right {
         display: flex;
         align-items: flex-end;
@@ -167,6 +177,10 @@
         width: 100%;
     }
     
+    #blocks img:hover {
+        opacity: 0.6;
+    }
+    
     .image-holder {
         background-color: rgba(212, 212, 212, 0.658);
         margin-top: 30px;
@@ -188,6 +202,10 @@
     #join h4,
     #join p {
         color: white;
+    }
+    
+    #join p {
+        margin-bottom: 0;
     }
     
     button {
@@ -217,6 +235,19 @@
         }
     }
     
+    @media screen and (min-width: 540px) {
+        #join>.row {
+            flex-direction: row !important;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        #testimonial img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
     @media (max-width: 991px) {
         h1,
         h2,
@@ -228,5 +259,20 @@
         a,
         button {
             font-size: 80%;
+        }
+        .fa-quote-right,
+        .fa-quote-left {
+            font-size: 2em;
+        }
+        #testimonial img {
+            width: 100px;
+            height: 100px;
+        }
+        .mb-200pos {
+            margin-bottom: 50px !important;
+        }
+        .card-one,
+        .card-two {
+            margin-bottom: 1.5rem;
         }
     }

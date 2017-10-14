@@ -8,8 +8,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <title>Laszlo Peter Varga Portfolio</title>
+    <title>Laszlo Peter Varga MockUp website</title>
 </head>
 
 <body>
@@ -63,8 +64,8 @@
         </div>
     </section>
     <section class="container mb-200pos">
-        <div class="row justify-content-between mt-5 blocks">
-            <div class="card">
+        <div class="row justify-content-center justify-content-lg-between mt-5 blocks">
+            <div class="card card-one">
                 <div class="card-body d-flex flex-column justify-content-around">
                     <h4>About Last 40
                         <hr class="col-2" />
@@ -74,7 +75,7 @@
                     <p>Read More</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card-two">
                 <div class="card-body d-flex flex-column justify-content-around">
                     <h4>Our mission
                         <hr class="col-2" />
@@ -84,7 +85,7 @@
                     <p>Read More</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card-three">
                 <div class="card-body d-flex flex-column justify-content-around">
                     <h4>Auor Vision
                         <hr class="col-2" />
@@ -123,40 +124,54 @@
 
         </div>
     </section>
-    <section id="blocks" class="container mb-50pos">
+    <section id="blocks" class="container">
         <div class="row justify-content-between">
-            <div class="col-3">
-                <img src="images/testimonial-md.jpg">
+            <div class="col-md-3 mb-4">
+                <a href="images/budapest-md.jpg" data-toggle="lightbox">
+                    <img src="images/budapest-md.jpg" alt="budapest">
+                </a>
             </div>
-            <div class="col-3">
-                <img src="images/testimonial-md.jpg">
+            <div class="col-md-3 mb-4">
+                <a href="images/bratislava-md.jpg" data-toggle="lightbox">
+                    <img src="images/bratislava-md.jpg" alt="bratislava">
+                </a>
             </div>
-            <div class="col-6">
-                <img src="images/testimonial-md.jpg">
+            <div class="col-md-6 mb-4">
+                <a href="images/london-md.jpg" data-toggle="lightbox">
+                    <img src="images/london-md.jpg" alt="london">
+                </a>
             </div>
         </div>
 
     </section>
     <section id="blocks" class="container mb-200pos">
         <div class="row justify-content-between">
-            <div class="col-3">
-                <img src="images/testimonial-md.jpg">
+            <div class="col-md-3 mb-4">
+                <a href="images/new-york-md.jpg" data-toggle="lightbox">
+                    <img src="images/new-york-md.jpg" alt="new-york">
+                </a>
             </div>
-            <div class="col-3">
-                <img src="images/testimonial-md.jpg">
+            <div class="col-md-3 mb-4">
+                <a href="images/niagara-falls-md.jpg" data-toggle="lightbox">
+                    <img src="images/niagara-falls-md.jpg" alt="niagara-falls">
+                </a>
             </div>
-            <div class="col-3">
-                <img src="images/testimonial-md.jpg">
+            <div class="col-md-3 mb-4">
+                <a href="images/prague-md.jpg" data-toggle="lightbox">
+                    <img src="images/prague-md.jpg" alt="prague">
+                </a>
             </div>
-            <div class="col-3">
-                <img src="images/testimonial-md.jpg">
+            <div class="col-md-3 mb-4">
+                <a href="images/rome-md.jpg" data-toggle="lightbox">
+                    <img src="images/rome-md.jpg" alt="rome">
+                </a>
             </div>
         </div>
     </section>
     <section id="testimonial" class="container-fluid">
         <div class="row">
             <div class="testimonial col height-70">
-                <div class="text-center about col col-lg-6">
+                <div class="text-center about col col-md-9 col-lg-6">
                     <i class="fa fa-users fa-4x mb-2" aria-hidden="true"></i>
                     <h3>What our clients say</h3>
                     <p>Clients Testimonial</p>
@@ -166,23 +181,19 @@
                             torquent per conubia nostra, per inceptos himenaeos. Aliquam ullamcorper dolor lectus, sit amet volutpat magna cursus sed. Etiam sed.</p>
                         <i class="fa fa-quote-right fa-4x" aria-hidden="true"></i>
                     </div>
+                    <div class="col pictures">
+                        <img class="rounded-circle" src="images/laszlo-varga-pic.jpg">
+                        <img class="rounded-circle image-active" src="images/laszlo-varga-pic.jpg">
+                        <img class="rounded-circle" src="images/laszlo-varga-pic.jpg">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="overlay"></div>
     </section>
-    <!-- <section>
-        <div class="row">
-            <div class="partners col">
-                <div class="text-center about col">
-                    <h3>Our best partner</h3>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section id="join" class=" container-fluid">
-        <div class="row justify-content-center height-15">
-            <div class="col col-lg-6 d-flex align-items-center flex-wrap">
+        <div class="row justify-content-center flex-column height-15">
+            <div class="col col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start flex-wrap">
                 <h4>Work with our Professional Team</h4>
                 <p>We make your dream come true, join us now</p>
             </div>
@@ -196,6 +207,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js.map"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
 </body>
 
 </html>
