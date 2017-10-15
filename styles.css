@@ -102,6 +102,10 @@
         margin-bottom: 50px;
     }
     
+    .height-100 {
+        height: 100vh;
+    }
+    
     .height-70 {
         height: 70vh;
     }
@@ -179,15 +183,6 @@
     
     #blocks img:hover {
         opacity: 0.6;
-    }
-    
-    .image-holder {
-        background-color: rgba(212, 212, 212, 0.658);
-        margin-top: 30px;
-    }
-    
-    .bottom-row .image-holder:last-child {
-        width: 560px;
     }
     
     .partners {
@@ -274,5 +269,11 @@
         .card-one,
         .card-two {
             margin-bottom: 1.5rem;
+        }
+    }
+    
+    @media screen and (orientation: portrait) and (min-height: 800px) {
+        .testimonial {
+            height: 50vh;
         }
     }
