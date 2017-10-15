@@ -36,11 +36,11 @@
     }
     
     .header {
-        background-image: url("images/background-header-md.jpg");
+        background-image: url("images/optimized-images/background-header-md.jpg");
     }
     
     .testimonial {
-        background-image: url("images/testimonial-md.jpg");
+        background-image: url("images/optimized-images/testimonial-md.jpg");
     }
     
     #testimonial {
